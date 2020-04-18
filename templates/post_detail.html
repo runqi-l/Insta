@@ -1,0 +1,11 @@
+<div>
+    <a href="{% url 'post_update' object.id %}"> Update Post</a>
+    <a href="{% url 'post_delete' object.id %}"> Delete Post</a>
+</div>
+
+
+
+<p> {{ object.title }}</p>
+
+<!--why object? this file usage must be from views.py, and detailview will return object-->
+<img src="/{{object.image}}">

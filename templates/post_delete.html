@@ -1,0 +1,10 @@
+<h1>Delete Post</h1>
+
+<!-- encrypt type multipart because text and image, multiform -->
+<form action="" method="post" enctype="multipart/form-data">
+    <!-- {%  means django language. csrf is from django, to protect form from heakers attacks, must include this with form-->
+    {% csrf_token %}
+    <!-- {{ means using django variables passed from view, as_p means treat every element as paragraph-->
+    <p> Do you want to delete "{{post.title}}"</p>
+    <button type="Delete">Delete</button>
+</form>

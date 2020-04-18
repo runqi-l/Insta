@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0510ce9f-edcb-4c0e-86a6-0b22cf8c5d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Insta/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Insta/migrations/0002_posttwo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/posts/egg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ins.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Insta/migrations/0003_delete_posttwo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/posts/groundedPork.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/posts/pink.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/posts/suanmiao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/posts/suanmiao_BND43ii.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/posts/tomato.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/posts/tomato_Lv60Lub.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Insta/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Insta/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Insta/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Insta/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insta/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Insta/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insta/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Insta/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/instaJZ/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/instaJZ/settings.py" afterDir="false" />
     </list>
@@ -69,7 +76,8 @@
       <workItem from="1587074276091" duration="10352000" />
       <workItem from="1587157502888" duration="234000" />
       <workItem from="1587157901322" duration="154000" />
-      <workItem from="1587158189168" duration="3790000" />
+      <workItem from="1587158189168" duration="4571000" />
+      <workItem from="1587224238476" duration="13375000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,21 @@
+{% load static %}
+<div>
+    <!-- make_post has been defined as a name for create post in urls.py-->
+    <a href="{% url 'make_post' %}">Make Post</a>
+</div>
+
+
+<div>
+    <!--why objects_list? this file usage must be from views.py, and listview will return objects_list-->
+    {% for post in object_list %}
+
+        <!--post.id will be passed as parameter to post_detail url-->
+        <a href="{% url 'post_detail' post.id %}"> <!--post_detail is the name in urls.py-->
+
+            <!--  /this means add src address directly after local host address, instead of insta/posts/img src-->
+            <img src="/{{post.image}}">    <!--in models.py, in post, get image field-->
+        </a>
+    {% endfor %}
+</div>
+
+
