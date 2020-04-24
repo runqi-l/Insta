@@ -1,39 +1,71 @@
-{% load static %}
-<ul>
-    {% if request.user.is_authenticated %}
-        <li>
-            Hi, {{request.user.username}}
-        <li>
-            <a href="{% url 'logout' %}"> Logout </a>
-        </li>
-        </li>
-    {% else %}
-        <li>
-            <a href="{% url 'login' %}"> Login </a>
-        </li>
-        <li>
-            <a href="{% url 'signup' %}"> Signup</a>
-        </li>
-    {% endif %}
-</ul>
+<!-- inherit from base.html(will replace with whole base.html codes -->
+{% extends 'base.html' %}
 
-<div>
-    <!-- make_post has been defined as a name for create post in urls.py-->
-    <a href="{% url 'make_post' %}">Make Post</a>
-</div>
+{% load custom_tags %}
+
+{% block content %}
+<!--<div>-->
+<!--    &lt;!&ndash; make_post has been defined as a name for create post in urls.py&ndash;&gt;-->
+<!--    <a href="{% url 'make_post' %}">Make Post</a>-->
+<!--</div>-->
 
 
-<div>
-    <!--why objects_list? this file usage must be from views.py, and listview will return objects_list-->
+<!--<div>-->
+<!--    &lt;!&ndash;why objects_list? this file usage must be from views.py, and listview will return objects_list&ndash;&gt;-->
+<!--    {% for post in object_list %}-->
+
+<!--        &lt;!&ndash;post.id will be passed as parameter to post_detail url&ndash;&gt;-->
+<!--        <a href="{% url 'post_detail' post.id %}"> &lt;!&ndash;post_detail is the name in urls.py&ndash;&gt;-->
+
+<!--            &lt;!&ndash;  /this means add src address directly after local host address, instead of insta/posts/img src&ndash;&gt;-->
+<!--            <img src="/{{post.image}}">    &lt;!&ndash;in models.py, in post, get image field&ndash;&gt;-->
+<!--        </a>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+
+
+<div class="cards-listing">
     {% for post in object_list %}
+    <!--every post in seperate line-->
+    <div class="row">
+        <div class="card view-update {{ post.pk }}">
 
-        <!--post.id will be passed as parameter to post_detail url-->
-        <a href="{% url 'post_detail' post.id %}"> <!--post_detail is the name in urls.py-->
+            <div class="card__panel-head">
+                <div class="poster__info">
+                    <a href="{% url 'user_detail' post.author.id %}" class="poster__name">
+                        <!--if the author has profile pic, show it-->
+                        {% if post.author.profile_pic %}
+                        <img class="poster__profilepic" src="/{{ post.author.profile_pic}}">
+                        {% endif %}
+                        {{ post.author.username }}
+                    </a>
+                </div>
+            </div>
 
-            <!--  /this means add src address directly after local host address, instead of insta/posts/img src-->
-            <img src="/{{post.image}}">    <!--in models.py, in post, get image field-->
-        </a>
+            <!--show post image-->
+            <a href="{% url 'post_detail' post.pk %}">
+                <img class="card__main-image" src="/{{ post.image.url }}">
+            </a>
+
+            <div class="card__panel-body">
+                <div class="likes">
+                    {% if post.get_like_count %}
+                    {{ post.get_like_count }} like{% if post.get_like_count > 1 %}s{% endif %}
+                    {% endif %}
+                </div>
+                <section class="input-row">
+                    <!-- fa is font awesome -->
+                    <i class="fa {% has_user_liked_post post user %} submit-like" aria-hidden="true"></i>
+
+                    <!-- this part of code is sibling of the above submit-like i, while input-row is parent -->
+                    <div class="hidden-data {{ post.pk }}" style="display: none;">
+                        <span class="post-pk">{{ post.pk }}</span>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
     {% endfor %}
 </div>
-
-
+{% endblock content %}
