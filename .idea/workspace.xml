@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0510ce9f-edcb-4c0e-86a6-0b22cf8c5d15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instaJZ/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/instaJZ/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,7 @@
       <workItem from="1587478196119" duration="2923000" />
       <workItem from="1587489100528" duration="30198000" />
       <workItem from="1587741677775" duration="4423000" />
-      <workItem from="1587747883766" duration="3570000" />
+      <workItem from="1587747883766" duration="4524000" />
     </task>
     <servers />
   </component>
