@@ -18,8 +18,8 @@ from django.urls import include, path
 from Insta.views import HelloWorld, PostsView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView, addLike, UserDetailView
 
 urlpatterns = [
-    path('', HelloWorld.as_view(), name='helloworld'),
-    path('posts/', PostsView.as_view(), name='posts'),
+    path('helloworld/', HelloWorld.as_view(), name='helloworld'),
+    path('', PostsView.as_view(), name='posts'),
     #<int:k> means at this posn I will give a integer, treat that as primary key
     path('post/<int:pk>/', PostDetailView.as_view(), name='post_detail'),
     path('post/new/', PostCreateView.as_view(), name='make_post'),
