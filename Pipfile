@@ -6,10 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==2.2.10"
+django = "==2.2.4"
 django-imagekit = "*"
 pillow = "*"
 django-annoying = "*"
+pilkit = "*"
 
 [requires]
 python_version = "3.8"

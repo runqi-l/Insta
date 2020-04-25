@@ -70,7 +70,9 @@ class SignUp(CreateView):
 @ajax_request
 def addLike(request):
     post_pk = request.POST.get('post_pk')
+    print(post_pk)
     post = Post.objects.get(pk=post_pk)
+
     try:
         like = Like(post=post, user=request.user)
         #save to database, will have exception if this user already liked the post (bcz we set unique-together in models.py)
