@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0510ce9f-edcb-4c0e-86a6-0b22cf8c5d15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insta/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Insta/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,8 @@
       <workItem from="1587741677775" duration="4423000" />
       <workItem from="1587747883766" duration="8737000" />
       <workItem from="1587757417385" duration="2670000" />
-      <workItem from="1587783120313" duration="2953000" />
+      <workItem from="1587783120313" duration="3266000" />
+      <workItem from="1588004765951" duration="853000" />
     </task>
     <servers />
   </component>
